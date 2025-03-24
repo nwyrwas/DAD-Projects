@@ -90,5 +90,40 @@ SELECT MONTH(order_date) AS month, SUM(order_amount) AS total_sales
 FROM orders 
 GROUP BY MONTH(order_date)
 ORDER BY month;
-
 ```
+### **🔧 Technologies Used**
+These datasets and SQL queries were built with and can be used in various relational databases and platforms:
+
+- **SQL (Structured Query Language)**
+- **MySQL / PostgreSQL / SQLite** (Database platforms)
+- **Microsoft SQL Server** (For Enterprise-grade solutions)
+- **Excel / Google Sheets** (For initial data exploration and analysis)
+
+---
+
+### **🧑‍💻 How to Use the Repository**
+To get started with these datasets and SQL queries:
+
+1. **Download the Datasets**: You can find all the data files in the `/datasets` directory.
+2. **Set Up Your Database**: Import the datasets into a relational database of your choice (MySQL, PostgreSQL, SQLite).
+3. **Run SQL Queries**: Use the provided SQL queries in the `/queries` directory to begin analyzing the data.
+4. **Modify Queries**: Feel free to modify the queries to suit your own analysis needs or to dive deeper into the data.
+
+If you need help understanding or modifying the queries, feel free to check out the documentation and comments provided alongside each query. I also encourage you to fork this repository and use the datasets for your own projects.
+
+---
+
+### **💡 Key Takeaways**
+- **Data Accessibility**: This repository makes it easy to access and explore a variety of real-world datasets.
+- **SQL Skill Development**: If you're learning SQL, this is an excellent resource for practicing and improving your query writing.
+- **Business Insights**: The datasets cover important business functions like sales, employee performance, and customer feedback, providing valuable insights that can guide decision-making.
+
+---
+
+### **📬 Contact Me**
+Feel free to reach out to me if you have any questions or feedback:
+
+- 📧 **Email**: nick.wyrwas@outlook.com
+- 🌐 **LinkedIn**: [Nicholas Wyrwas](https://www.linkedin.com/in/nicholaswyrwas)
+- 🛠 **GitHub**: [@nwyrwas](https://github.com/nwyrwas)
+
