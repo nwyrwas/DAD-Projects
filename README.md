@@ -47,3 +47,48 @@ To analyze the datasets above and uncover valuable insights, I’ve written vari
 - **Example**: 
   ```sql
   SELECT * FROM sales_data WHERE product_id = 101;
+
+  ```
+
+  ### **2. Aggregated Analysis**
+Queries that calculate summary statistics or aggregated values across datasets, such as total sales, average employee salaries, or average customer ratings.
+
+**Example:**
+```sql
+SELECT product_id, SUM(sales_amount) AS total_sales 
+FROM sales_data 
+GROUP BY product_id;
+```
+### **3. Advanced Analytics
+- Complex SQL queries used for in-depth analysis such as cohort analysis, trend analysis, or advanced filtering techniques.
+- **Example**:
+  ```sql
+
+  SELECT customer_id, COUNT(order_id) AS order_count
+  FROM orders
+  WHERE order_date BETWEEN '2024-01-01' AND '2024-03-31'
+  GROUP BY customer_id
+  HAVING COUNT(order_id) > 5;
+
+  ```
+### **4. Join Operations**
+Queries that combine data from multiple tables to perform comprehensive analysis.
+
+**Example:**
+```sql
+SELECT e.employee_id, e.name, s.salary 
+FROM employees e
+INNER JOIN salaries s ON e.employee_id = s.employee_id;
+
+```
+  ### **5. Trend and Time-Series Analysis**
+SQL queries designed to extract insights from data over time, like sales trends, monthly growth, or seasonal variations.
+
+**Example:**
+```sql
+SELECT MONTH(order_date) AS month, SUM(order_amount) AS total_sales 
+FROM orders 
+GROUP BY MONTH(order_date)
+ORDER BY month;
+
+```
